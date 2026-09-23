@@ -28,7 +28,8 @@ Before you start, make sure you have:
 - A **Mac** (required for iOS development)
 - **Xcode** installed — [download from the Mac App Store](https://apps.apple.com/us/app/xcode/id497799835)
 - **Node.js** (v22 or later) — [download here](https://nodejs.org)
-- **CocoaPods** — install by running `sudo gem install cocoapods` in Terminal
+- **Brew** installed on your computer (which you should have if you've set up the web version of your demo app)
+- **CocoaPods** — install by running `brew install cocoapods` in Terminal
 - An **iPhone** with a USB cable
 - Your **Appcues Account ID** and **Application ID** — find these in Appcues Studio under Settings → Apps & Installation
 
@@ -38,12 +39,12 @@ Before you start, make sure you have:
 
 ### 1. Clone the repo
 
-Open Terminal and run:
+Open Claude and use this prompt:
 
 ```
-git clone <repo-url>
-cd AppcuesTestApp
+I need you to clone this Git repo (https://github.com/pizzaispizza/appcues-mobile-demo-app.git) and place it in my documents in a new folder titled appcues-mobile-app-demo
 ```
+This will create a folder in your Documents with all the necessary files.
 
 ### 2. Edit your personal config
 
@@ -70,13 +71,13 @@ export const DEFAULT_USER = {
 
 ### 3. Install dependencies
 
-In Terminal, from the project folder run:
+Right click on your project folder (apcues-mobile-app-demo) and select **New Terminal At Folder**. Run the following command.
 
 ```
 npm install
 ```
 
-Then install the iOS native dependencies:
+Then install the iOS native dependencies by navigating in the terminal to your ios folder and running this commanad  :
 
 ```
 cd ios && pod install && cd ..
@@ -93,7 +94,7 @@ Open the file `ios/AppcuesTestApp.xcworkspace` in Xcode.
 In Xcode:
 1. Click **AppcuesTestApp** in the left sidebar under TARGETS
 2. Go to the **Signing & Capabilities** tab
-3. Under **Team**, select your personal Apple ID
+3. Under **Team**, select your personal Apple ID or click "add a new account" and sign in with your Apple ID if it's your first time.
 4. If you see a signing error, click **Try Again** or **Register Device**
 
 ### 6. Run the app on your iPhone
