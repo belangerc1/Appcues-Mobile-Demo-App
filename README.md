@@ -42,7 +42,7 @@ Before you start, make sure you have:
 Open Claude and use this prompt:
 
 ```
-I need you to clone this Git repo (https://github.com/pizzaispizza/appcues-mobile-demo-app.git) and place it in my documents in a new folder titled appcues-mobile-app-demo
+I need you to clone this Git repo (https://github.com/belangerc1/Appcues-Mobile-Demo-App.git) and place it in my documents in a new folder titled appcues-mobile-app-demo
 ```
 This will create a folder in your Documents with all the necessary files.
 
